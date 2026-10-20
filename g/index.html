@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Jump - Sarguzasht</title>
+    <link rel="stylesheet" href="./stayl.css">
+</head>
+<body>
+    <main class="game-container">
+        <header class="top-bar">
+            <div class="brand">
+                <span class="brand-icon">🥷</span>
+                <div>
+                    <h1>NINJA JUMP</h1>
+                    <p>Sakrash vaqti!</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span>🪙</span>
+                    <div>
+                        <small>TANGALAR</small>
+                        <strong id="coins">0</strong>
+                    </div>
+                </div>
+                <div class="stat">
+                    <span>🏆</span>
+                    <div>
+                        <small>REKORD</small>
+                        <strong id="best">0</strong>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="game-card">
+            <div class="game-heading">
+                <div>
+                    <span class="level-label">LEVEL 01</span>
+                    <h2>O‘rmon sarguzashti</h2>
+                </div>
+                <div class="score-box">
+                    <span>BALL</span>
+                    <strong id="score">0</strong>
+                </div>
+            </div>
+
+            <div class="canvas-wrap">
+                <canvas id="game" width="900" height="420"
+                    aria-label="Ninja sakrash o‘yini"></canvas>
+
+                <div class="overlay" id="overlay">
+                    <div class="overlay-icon" id="overlayIcon">🥷</div>
+                    <h2 id="overlayTitle">Sarguzasht boshlanadi!</h2>
+                    <p id="overlayText">
+                        To‘siqlardan sakra, tangalarni yig‘ va rekordni yangila.
+                    </p>
+                    <button id="startBtn" class="primary-btn">
+                        ▶ O‘yinni boshlash
+                    </button>
+                </div>
+
+                <div class="pause-indicator" id="pauseIndicator">
+                    ⏸ O‘yin to‘xtatildi
+                </div>
+            </div>
+
+            <div class="game-footer">
+                <div class="status">
+                    <span class="live-dot"></span>
+                    <span id="statusText">Boshlashga tayyor</span>
+                </div>
+                <div class="game-actions">
+                    <button id="pauseBtn" class="icon-btn" aria-label="Pauza">
+                        Ⅱ
+                    </button>
+                    <button id="restartBtn" class="icon-btn" aria-label="Qayta boshlash">
+                        ↻
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="controls">
+            <div class="control-info">
+                <h3>🎮 Boshqaruv</h3>
+                <p>To‘siq kelganda sakra!</p>
+            </div>
+
+            <div class="key-guide">
+                <span class="key">SPACE</span>
+                <span class="key">↑</span>
+                <span>Sakrash</span>
+            </div>
+
+            <button id="mobileJump" class="jump-btn">
+                ⬆ SAKRASH
+            </button>
+        </section>
+
+        <footer class="page-footer">
+            NINJA JUMP <span>•</span> Chaqqonlik va mahorat!
+        </footer>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
